@@ -1,7 +1,11 @@
 #include "sort.h"
 
 /**
- * bubble_sort - sorts an array of integers in ascending order using the Bubble sort algorithm
+ * bubble_sort - sorts an array of integers in ascending order using the Bubble
+ * sort algorithm
+ * @array: array of integers to sort
+ * @size: length of the array
+ *
  */
 void bubble_sort(int *array, size_t size)
 {
@@ -23,6 +27,10 @@ void bubble_sort(int *array, size_t size)
 				print_array(array, size);
 			}
 		}
+		/*
+		 * we'll loop till the last sorted item next. Beyond that,
+		 * the items are sorted
+		 */
 		n = last_swap;
 	}
 }
